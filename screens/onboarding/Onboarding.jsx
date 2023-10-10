@@ -1,9 +1,8 @@
 import { StyleSheet, Text, FlatList } from 'react-native';
 import React from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import Slides from '../../components/Onboard/Slides';
 
 const Onboarding = () => {
-  const Onboarding = () => {
     const slides = [
         {
             id: 1,
@@ -22,7 +21,7 @@ const Onboarding = () => {
         },
         
     ]
-  }
+  
 
   return (
     <FlatList 
@@ -31,7 +30,7 @@ const Onboarding = () => {
         showsHorizontalScrollIndicator={false}
         data={slides}
         keyExtractor={(item) => item.id}
-        renderItem={({item})=> }
+        renderItem={({item})=> <Slides item={item}/>}
     />
   )
 }
