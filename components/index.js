@@ -4,7 +4,6 @@ import HeightSpacer from "./Reusable/HeightSpacer";
 import WidthSpacer from "./Reusable/WidthSpacer";
 import NetworkImage from "./Reusable/NetworkImage";
 import Recommendations from "./Home/Recommendations";
-import ReusableTile from "./Reusable/ReusableTile";
 import Rating from "./Reusable/Rating";
 
 export {
@@ -14,6 +13,5 @@ export {
     WidthSpacer,
     NetworkImage,
     Recommendations,
-    ReusableTile,
-    Rating
+    Rating,
 };

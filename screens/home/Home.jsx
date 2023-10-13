@@ -7,6 +7,7 @@ import Places from '../../components/Home/Places';
 import { TEXT, COLORS, SIZES } from '../../constants/theme';
 import { AntDesign } from '@expo/vector-icons'
 import styles from './Home.style';
+import BestHotels from '../../components/Home/BestHotels';
 
 
 const Home = ({navigation}) => {
@@ -44,6 +45,10 @@ const Home = ({navigation}) => {
             <HeightSpacer height={15}/>
 
             <Recommendations />
+
+            <HeightSpacer height={30}/>
+
+            <BestHotels />
 
       </View>
     </SafeAreaView>
