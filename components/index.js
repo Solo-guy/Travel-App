@@ -9,7 +9,7 @@ import AppBar from './Reusable/AppBar';
 import DescriptionText from "./Reusable/DescriptionText";
 import PopularList from "./Country/PopularList";
 import HotelMap from "./Hotel/HotelMap";
-import ReviewTle from "./Titles/Reviews/ReviewTle";
+import ReviewTle from "./Tiles/Reviews/ReviewTle";
 import ReviewsList from "./Hotel/ReviewsList";
 
 export {

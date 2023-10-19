@@ -2,7 +2,7 @@ import { StyleSheet, VirtualizedList, View, Text } from 'react-native';
 import React from 'react';
 import HeightSpacer from '../Reusable/HeightSpacer';
 import { SIZES } from '../../constants/theme';
-import Country from '../Titles/Country/Country';
+import Country from '../Tiles/Country/Country';
 
 const Places = () => {
   const countries =  [

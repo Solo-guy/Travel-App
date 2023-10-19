@@ -45,7 +45,7 @@ const ReviewTle = ({review}) => {
                 </View>
             </View>
             <View>
-              <DescriptionText text={review.review}/>
+              <DescriptionText text={review.review} lines={2}/>
             </View>
           </View>
         </View>

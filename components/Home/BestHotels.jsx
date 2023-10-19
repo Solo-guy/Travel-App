@@ -5,7 +5,7 @@ import ReusableText from '../Reusable/ReusableText';
 import { TEXT, COLORS, SIZES } from '../../constants/theme';
 import {Feather} from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import HotelCard from '../Titles/Hotels/HotelCard';
+import HotelCard from '../Tiles/Hotels/HotelCard';
 
 const BestHotels = () => {
     const navigation = useNavigation();

@@ -10,6 +10,10 @@ import PlaceDetails from "./details/PlaceDetails";
 import HotelDetails from "./details/HotelDetails";
 import HotelList from "./details/HotelList";
 import HotelSearch from "./search/HotelSearch";
+import SelectRoom from "./details/SelectRoom";
+import TopBookings from './top/TopBookings';
+import TopInfor from './top/TopInfor';
+import TopTrips from './top/TopTrips';
 
 export {
     Onboarding,
@@ -23,5 +27,9 @@ export {
     PlaceDetails,
     HotelDetails,
     HotelList,
-    HotelSearch
+    HotelSearch,
+    SelectRoom,
+    TopBookings,
+    TopInfor,
+    TopTrips
 }

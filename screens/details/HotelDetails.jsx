@@ -1,13 +1,13 @@
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import React from 'react';
-import { AppBar, DescriptionText, HeightSpacer, HotelMap, NetworkImage, ReusableText, ReviewsList } from '../../components';
+import { AppBar, DescriptionText, HeightSpacer, HotelMap, NetworkImage, ReusableBtn, ReusableText, ReviewsList } from '../../components';
 import { COLORS, TEXT, SIZES } from '../../constants/theme';
 import styles from './hotelDetail.style';
 import reusable from '../../components/Reusable/Reusable.style';
 import { Rating } from 'react-native-stock-star-rating';  
 import {Feather} from '@expo/vector-icons';
 
-const HotelDetails = () => {
+const HotelDetails = ({navigation}) => {
   const hotel = {
     "availability": {
         "start": "2023-08-20T00:00:00.000Z",
@@ -176,8 +176,36 @@ let coordinates = {
     <HeightSpacer height={10}/>
 
     <ReviewsList reviews={hotel.reviews}/>  
-
       </View>
+        <View style={[reusable.rowWithSpace('space-between'), styles.bottom]}>
+          <View>
+            <ReusableText
+              text={`\$ ${hotel.price}`}
+              family={'medium'}
+              size={SIZES.large}
+              color={COLORS.black}
+            /> 
+            <HeightSpacer height={5}/>
+
+            <ReusableText
+              text={'Jan 01 - Dec 25th'}
+              family={'medium'}
+              size={SIZES.medium}
+              color={COLORS.gray}
+            /> 
+          </View>
+
+          <ReusableBtn
+          onPress={() => navigation.navigate('SelectRoom')}
+          btnText={"Select Room"}
+          width={(SIZES.width - 50)/2.2}
+          backgroundColor={COLORS.green}
+          borderColor={COLORS.green}
+          borderWidth={0}
+          textColor={COLORS.white}
+          />
+        </View>
+
     </View>
   </ScrollView>
   );

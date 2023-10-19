@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import ReviewTle from '../Titles/Reviews/ReviewTle';
+import ReviewTle from '../Tiles/Reviews/ReviewTle';
 
 const ReviewsList = ({reviews}) => {
   return (
