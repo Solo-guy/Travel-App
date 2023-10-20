@@ -2,7 +2,7 @@ import { View, Text, FlatList } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AppBar from '../../components/Reusable/AppBar';
-import { COLORS, SIZES } from '../../constants/theme';
+import { COLORS} from '../../constants/theme';
 import ReusableTile from '../../components/Reusable/ReusableTile';
 
 const HotelList = ({navigation}) => {

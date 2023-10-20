@@ -12,6 +12,8 @@ import BestHotels from '../../components/Home/BestHotels';
 
 const Home = ({navigation}) => {
   return (
+    <ScrollView>
+
     <SafeAreaView style={reusable.container}>
         <View>
           <View style={reusable.rowWithSpace('space-between')}>
@@ -52,6 +54,8 @@ const Home = ({navigation}) => {
 
         </View>
     </SafeAreaView>
+    </ScrollView>
+
   )
 };
 

@@ -14,6 +14,8 @@ import SelectRoom from "./details/SelectRoom";
 import TopBookings from './top/TopBookings';
 import TopInfor from './top/TopInfor';
 import TopTrips from './top/TopTrips';
+import Payments from './profile/Payments';
+import Settings from './settings/Settings';
 
 export {
     Onboarding,
@@ -31,5 +33,7 @@ export {
     SelectRoom,
     TopBookings,
     TopInfor,
-    TopTrips
+    TopTrips,
+    Payments,
+    Settings
 }
