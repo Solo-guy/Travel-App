@@ -4,7 +4,7 @@ import React from 'react';
 const AssetImage = ({data}) => {
   return (
     <View style={{alignItems: 'center'}}>
-      <Image source={data} />
+      <Image source={data}/>
     </View>
   )
 };
