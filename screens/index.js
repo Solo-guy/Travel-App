@@ -20,6 +20,7 @@ import Successful from "./bookings/Successful";
 import Failed from "./bookings/Failed";
 import Registration from "./authentication/Registration";
 import Signin from "./authentication/Signin";
+import SelectedRoom from "./details/SelectedRoom";
 
 export {
     Onboarding,
@@ -43,5 +44,6 @@ export {
     Successful,
     Failed,
     Registration,
-    Signin
+    Signin,
+    SelectedRoom
 }
