@@ -33,7 +33,7 @@ const SelectedRoom = ({navigation}) => {
 
             <HeightSpacer height={20}/>
 
-            <View >
+            <View style={{marginHorizontal: 10}}>
                 <View style={reusable.rowWithSpace('space-between')}>
                     <ReusableText
                     text={item.title}
@@ -101,7 +101,10 @@ const SelectedRoom = ({navigation}) => {
                     />
 
                     <View style={reusable.rowWithSpace('flex-start')}>
-                      <AssetImage mode={'contain'} width={30} height={20} data={require('../../assets/images/Visa.png')}/>
+                      <AssetImage mode={'contain'} 
+                      width={30} 
+                      height={20} 
+                      data={require('../../assets/images/Visa.png')}/>
                         <ReusableText
                         text={'Visa'}
                         family={'regular'}
@@ -128,7 +131,7 @@ const SelectedRoom = ({navigation}) => {
                 <HeightSpacer height={30}/>
 
                 <ReusableBtn
-                onPress={() => navigation.navigate('SelectedRoom', {item})}
+                onPress={() => navigation.navigate('Success')}
                 btnText={"Book Now"}
                 width={SIZES.width - 50}
                 backgroundColor={COLORS.green}
